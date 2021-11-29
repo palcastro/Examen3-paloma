@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="formulario">
+    <header-component></header-component>
+    <div class="container4">
+        <form class="box">
+          <h2>INTRODUZCA SUS DATOS</h2>
+          <label for="user">Usuario:</label>
+          <input type="text" name="user" id="user" required  minlength="10"/>
+          <br> 
+          <input type="radio" id="css" name="gender" value="Mujer">
+          <label for="css">Mujer</label>
+          <input type="radio" id="html" name="gender" value="Hombre">
+          <label for="html">Hombre</label>
+          <input type="radio" id="css" name="gender" value="Otre">
+          <label for="css">Otre</label><br>   
+          <label for="birthday">Fecha de nacimiento:</label>
+          <input type="date" id="birthday" name="birthday" required>
+          <br>
+          <label for="email">Dirección E-mail:</label>
+          <input type="text" name="email" id="email" required/>
+          <br>
+          <label for="phone">Número de teléfono:</label>
+          <input type="text" name="phone" id="phone" required maxlength="15" />
+          <br>
+          <label for="adress">Dirección:</label>
+          <input type="text" id="adress" required> </input>
+          <br>
+          <label for="cp">C.P.:</label>
+          <input type="text" id="cp"required> </input>
+          <br>
+          <label for="place">Población</label>
+          <input type="text" id="place" required> </input>
+          <br>
+          <label for="comment">Comentarios:</label><br>
+          <textarea name="comment" id="comment" required maxlength="200"> </textarea><br>
+           <button class="btn">Enviar datos</button>
+        </form>
+      </div>
+    <footer-component></footer-component> 
+</body>
+<script src="./js/components-header.js" type="text/javascript" defer></script>
+<script src="./js/components-footer.js" type="text/javascript" defer></script>
+</html>
